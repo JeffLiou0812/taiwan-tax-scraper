@@ -1,13 +1,9 @@
-"@ -ForegroundColor Cyan
-
-# 複製GitHub Actions內容到剪貼簿
-@'
 name: 每日稅務函釋爬蟲
 
 on:
   schedule:
-    - cron: '0 10 * * *'  # UTC 10:00 = 台灣 18:00
-  workflow_dispatch:      # 允許手動觸發
+    - cron: '0 10 * * *'
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -36,13 +32,4 @@ jobs:
         retention-days: 30
 '@ | Set-Clipboard
 
-Write-Host @"
-
-✅ 內容已複製到剪貼簿！
-
-4️⃣ 在大框框按 Ctrl+V 貼上
-
-5️⃣ 捲動到最下方，點擊：
-   [Commit new file] 綠色按鈕
-
-"@ -ForegroundColor Green
+Write-Host "✅ 內容已複製到剪貼簿！" -ForegroundColor Green

@@ -1,0 +1,141 @@
+name: Smart Scraper
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 10 * * *'  # 每天台灣時間18:00
+
+jobs:
+  smart-scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 檢出程式碼
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      # 2. 設定Python環境
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      # 3. 安裝必要套件
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 pandas lxml
+          echo "✅ 套件安裝完成"
+      
+      # 4. 執行智慧爬蟲
+      - name: Run smart scraper
+        id: scrape
+        run: |
+          echo "🤖 執行智慧爬蟲..."
+          python smart_scraper.py
+          echo "✅ 爬蟲執行完成"
+      
+      # 5. 讀取執行報告
+      - name: Read report
+        id: report
+        run: |
+          if [ -f data/daily_report.json ]; then
+            has_new=$(python -c "import json; r=json.load(open('data/daily_report.json')); print('true' if r.get('has_new') else 'false')")
+            new_count=$(python -c "import json; r=json.load(open('data/daily_report.json')); print(r.get('new_count', 0))")
+            echo "has_new=$has_new" >> $GITHUB_OUTPUT
+            echo "new_count=$new_count" >> $GITHUB_OUTPUT
+            echo "📊 報告: 新函釋=$new_count"
+          else
+            echo "has_new=false" >> $GITHUB_OUTPUT
+            echo "new_count=0" >> $GITHUB_OUTPUT
+          fi
+      
+      # 6. 建立通知Issue（只在有新函釋時）
+      - name: Create notification
+        if: steps.report.outputs.has_new == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // 讀取新函釋資料
+            let newRulings = [];
+            let report = {};
+            
+            try {
+              newRulings = JSON.parse(fs.readFileSync('data/today_new.json', 'utf8'));
+              report = JSON.parse(fs.readFileSync('data/daily_report.json', 'utf8'));
+            } catch (e) {
+              console.log('Error reading files:', e);
+              return;
+            }
+            
+            // 建立Issue內容
+            let body = `# 📢 稅務函釋更新通知\n\n`;
+            body += `> 🕐 執行時間: ${report.execution_time}\n\n`;
+            body += `## 📊 統計\n`;
+            body += `- 檢查函釋: ${report.total_checked} 筆\n`;
+            body += `- **新增函釋: ${report.new_count} 筆** ✨\n\n`;
+            
+            if (newRulings.length > 0) {
+              body += `## 📋 新函釋清單\n\n`;
+              
+              newRulings.forEach((ruling, idx) => {
+                body += `### ${idx + 1}. ${ruling.title || '(無標題)'}\n`;
+                if (ruling.date) body += `- 📅 日期: ${ruling.date}\n`;
+                if (ruling.number) body += `- 📝 字號: ${ruling.number}\n`;
+                if (ruling.url) body += `- 🔗 [查看原文](${ruling.url})\n`;
+                body += `\n---\n\n`;
+              });
+            }
+            
+            body += `\n💾 [下載完整資料](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`;
+            
+            // 建立Issue
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🆕 發現 ${report.new_count} 筆新稅務函釋 - ${new Date().toLocaleDateString('zh-TW')}`,
+              body: body,
+              labels: ['smart-notification', 'new-rulings']
+            });
+            
+            console.log('✅ 通知已建立');
+      
+      # 7. 上傳所有結果
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smart-results-${{ github.run_number }}
+          path: data/
+          retention-days: 30
+      
+      # 8. 提交歷史記錄（保持追蹤）
+      - name: Commit history
+        if: always()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Smart Scraper Bot"
+          
+          # 只提交歷史檔案，不提交每日資料
+          if [ -f data/smart_history.json ]; then
+            git add data/smart_history.json
+            git diff --quiet && git diff --staged --quiet || (
+              git commit -m "🤖 自動更新: 函釋歷史記錄 $(date +'%Y-%m-%d %H:%M')"
+              git push
+            )
+          fi
+      
+      # 9. 顯示執行摘要
+      - name: Show summary
+        if: always()
+        run: |
+          echo "======================================"
+          echo "🏁 智慧爬蟲執行完成"
+          echo "======================================"
+          if [ "${{ steps.report.outputs.has_new }}" == "true" ]; then
+            echo "🎯 發現新函釋: ${{ steps.report.outputs.new_count }} 筆"
+            echo "📧 已建立通知"
+          else
+            echo "✨ 今天沒有新函釋"
+          fi
+          echo "======================================"

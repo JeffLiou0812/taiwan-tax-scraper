@@ -1,8 +1,18 @@
 name: Smart Scraper
+
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 10 * * *'  # 每天台灣時間18:00
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+# 🔑 權限設定
+permissions:
+  contents: write          # 允許讀寫檔案和資料夾
+  actions: read           # 允許讀取 GitHub Actions
+  pages: write            # 允許寫入 GitHub Pages（可選）
+  id-token: write         # 允許 OIDC token 驗證
+  security-events: write  # 允許安全事件寫入（可選）
+  issues: write           # 允許建立 Issues（用於通知）
 
 jobs:
   smart-scrape:

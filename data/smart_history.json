@@ -568,5 +568,455 @@
     "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312120001",
     "date": "112年12月11日",
     "id": "2ce8d58a3ff2"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.614185+08:00",
+    "doc_number": "台財稅字第11404541300號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202507300001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202507300001",
+    "date": "114年07月30日",
+    "title": "營利事業按上年度應納稅額二分之一計算暫繳稅額者，該上年度應納稅額不包括同年度依所得稅法第24條之5規定分開計算之應納稅額",
+    "id": "a4b4339fe167"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.616030+08:00",
+    "doc_number": "台財稅字第11404579430號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202507210001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202507210001",
+    "date": "114年07月18日",
+    "title": "核釋營業人進口貨物經海關代徵營業稅，嗣因不可歸責原因影響，其溢付稅額可申請核實退還",
+    "id": "783881c3a024"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.616473+08:00",
+    "doc_number": "台財稅字第11404588630號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202506250002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202506250002",
+    "date": "114年06月25日",
+    "title": "納稅義務人就稅捐及罰鍰依法提起行政救濟並依稅捐稽徵法第39條規定暫緩執行之案件，於計算徵收期間時，依同法第23條第3項規定扣除暫緩執行之期間，應計算至行政救濟確定日。",
+    "id": "54708285148b"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.616886+08:00",
+    "doc_number": "台財稅字第11400555460號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202506250001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202506250001",
+    "date": "114年06月25日",
+    "title": "核釋依法與地方主管機關簽訂行政契約之長照特約單位，提供交通接送服務免徵營業稅",
+    "id": "618d4a1f6d1b"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.617331+08:00",
+    "doc_number": "台財稅字第11304650680號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503260002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503260002",
+    "date": "114年03月26日",
+    "title": "房屋受重大災害毀損及符合都市更新條例、都市危險及老舊建築物加速重建條例或新市鎮開發條例規定減免房屋稅案件之相關規定",
+    "id": "8740f654a252"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.617776+08:00",
+    "doc_number": "台財稅字第11300701150號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503260001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503260001",
+    "date": "114年03月26日",
+    "title": "核釋於房屋稅課稅所屬期間首日(7月1日)起房屋使用情形變更之相關申報及適用稅率規定",
+    "id": "00201b8e725b"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.618228+08:00",
+    "doc_number": "台財稅字第11304658550號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503190001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503190001",
+    "date": "114年03月19日",
+    "title": "起造人持有待銷售住家用房屋期間得扣除因天災、事變、不可抗力事由致無法銷售期間之規定",
+    "id": "cd96f1f62a14"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.618664+08:00",
+    "doc_number": "台財稅字第11300697020號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503060001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503060001",
+    "date": "114年03月06日",
+    "title": "毗鄰房屋打通或合併使用，僅於1戶房屋辦竣戶籍登記，准按自住住家用稅率課徵房屋稅",
+    "id": "791d4d08912a"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.619119+08:00",
+    "doc_number": "台財稅字第11304678970號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202502040001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202502040001",
+    "date": "114年02月04日",
+    "title": "受託人辦理以境外低稅負區受控外國企業(CFC)股權為信託財產之信託所得申報，如無法於信託所得申報期間屆滿前取得會計師查核簽證CFC財務報表或其他文據，得以CFC財務報表自結盈餘數辦理信託所得申報；嗣CFC財務報表經會計師查核簽證或經稽徵機關確認後之金額與該自結盈餘數不同時，受託人應於受益人辦理當年度所得稅結算申報期間屆滿前辦理更正申報，並通知受益人更正結果。",
+    "id": "5f36756da47c"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.619657+08:00",
+    "doc_number": "台財稅字第11304664860號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501220001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501220001",
+    "date": "114年01月22日",
+    "title": "進口車輛已納貨物稅且未經使用，嗣後運銷國外者，車輛輸出人申請退還貨物稅規定",
+    "id": "9aaa138225ac"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.620096+08:00",
+    "doc_number": "台財稅字第11304682780號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501170001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501170001",
+    "date": "114年01月17日",
+    "title": "核定營利事業辦理資產重估價所適用「歷年來中華民國臺灣地區生產者物價指數及資產重估用物價倍數表」",
+    "id": "7d5580714ba3"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.620602+08:00",
+    "doc_number": "台財稅字第11300651710號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501170002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501170002",
+    "date": "114年01月17日",
+    "title": "領有駕駛執照無車輛之身心障礙者，其配偶或同一戶籍二親等以內親屬所有，供該身心障礙者使用之車輛，得比照使用牌照稅法第7條第1項第8款本文後段及第2項規定申請免徵使用牌照稅，並受該款但書免徵金額之限制。",
+    "id": "68b64c88dfcd"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.621107+08:00",
+    "doc_number": "台財稅字第11404500980號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501070002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501070002",
+    "date": "114年01月07日",
+    "title": "核定113年度綜合所得稅結算申報新臺幣與人民幣之折算率為4.4685比1。",
+    "id": "249244fbb2e8"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.621577+08:00",
+    "doc_number": "台財稅字第11304615290號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501070001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501070001",
+    "date": "114年01月07日",
+    "title": "核釋營利事業認列國外被投資事業投資損失檢附相關證明文件得免經我國駐外館處驗證。",
+    "id": "bbd8182c2cc1"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:33.622008+08:00",
+    "doc_number": "台財稅字第11300645290號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412310001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412310001",
+    "date": "113年12月31日",
+    "title": "配合113年8月7日修正公布所得稅法部分條文，修正所得稅法相關釋示函令。",
+    "id": "b88c81c92398"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.428498+08:00",
+    "doc_number": "台財稅字第11304652000號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412240001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412240001",
+    "date": "113年12月24日",
+    "title": "核釋個人以勞務出資取得閉鎖性股份有限公司股份之課稅規定",
+    "id": "4ddf02cae05d"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.428854+08:00",
+    "doc_number": "台財稅字第11304654284號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412120001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412120001",
+    "date": "113年12月12日",
+    "title": "營業人開立銷貨退回、進貨退出或折讓證明單未依時限傳輸存證於一定期間內得免處行為罰",
+    "id": "91d39f11fcd5"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.429182+08:00",
+    "doc_number": "台財稅字第11300677540號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412100001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412100001",
+    "date": "113年12月10日",
+    "title": "訂定「一百十四年度營利事業借款利率最高標準及員工薪資通常水準」",
+    "id": "a45aa37ddd28"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.429534+08:00",
+    "doc_number": "台財稅字第11300607350號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412060001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412060001",
+    "date": "113年12月06日",
+    "title": "核釋營業人提供遊戲幣交易服務按收付價款差額課徵營業稅認定基準",
+    "id": "8aeb289becc9"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.429860+08:00",
+    "doc_number": "台財稅字第11304656750號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412040001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412040001",
+    "date": "113年12月03日",
+    "title": "所得稅法第17條房屋租金支出特別扣除額視為非自有房屋之情形",
+    "id": "fc8bce7733a2"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.430186+08:00",
+    "doc_number": "台財稅字第11300609900號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411150001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411150001",
+    "date": "113年11月15日",
+    "title": "核釋行政法人視同政府機關免徵印花稅、房屋稅及地價稅",
+    "id": "202a801b125d"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.430526+08:00",
+    "doc_number": "廢止財政部98年7月28日台財稅字第09800218900號函等函令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411140001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411140001",
+    "date": "113年11月13日",
+    "title": "廢止財政部98年7月28日台財稅字第09800218900號函等函令",
+    "id": "5c7ed6725f54"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.430845+08:00",
+    "doc_number": "台財稅字第11304553700號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411010001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411010001",
+    "date": "113年11月01日",
+    "title": "營利事業逾期繳納應納稅額情節輕微適用盈虧互抵規定",
+    "id": "756cedcb8906"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.431156+08:00",
+    "doc_number": "台財稅字第11304651400號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410180002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410180002",
+    "date": "113年10月18日",
+    "title": "113年版稅捐稽徵法令彙編發行後相關釋示函令適用原則",
+    "id": "dd342eacb62f"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.431489+08:00",
+    "doc_number": "台財稅字第11304650700號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410180001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410180001",
+    "date": "113年10月18日",
+    "title": "113年版貨物稅菸酒稅特種貨物及勞務稅法令彙編發行後相關釋示函令適用原則",
+    "id": "fa4445cce65d"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.431804+08:00",
+    "doc_number": "台財稅字第11304638560號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410140001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410140001",
+    "date": "113年10月14日",
+    "title": "修正與廢止貨物稅條例及菸酒稅法相關釋示函令。",
+    "id": "dda5c8524ad2"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.432118+08:00",
+    "doc_number": "台財稅字第11300594870號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202409040001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202409040001",
+    "date": "113年09月04日",
+    "title": "取得中華民國居留證者，其居留地址之房地符合一定要件，於房屋稅及地價稅，視同於該房地辦竣戶籍登記，適用自住用稅率。",
+    "id": "c4ec5f31b9a2"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.432452+08:00",
+    "doc_number": "廢止本部91年10月11日台財稅字第0910456289號函",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202408160001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202408160001",
+    "date": "113年08月16日",
+    "title": "廢止本部91年10月11日台財稅字第0910456289號函",
+    "id": "2a629c9c2e67"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.432760+08:00",
+    "doc_number": "台財稅字第11300570850號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202408050001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202408050001",
+    "date": "113年08月05日",
+    "title": "非以公益為目的之長期照顧服務機構社團法人適用虧損扣抵及試算暫繳之規定",
+    "id": "ec1f358dbc36"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:36.433080+08:00",
+    "doc_number": "台財稅字第11304583280號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407110001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407110001",
+    "date": "113年07月11日",
+    "title": "核釋農會信用部及漁會信用部(以下合稱信用部)將餘裕資金轉存符合資格條件之其他信用部所取得之利息收入不課徵營業稅",
+    "id": "7b1120c7d051"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.463203+08:00",
+    "doc_number": "台財稅字第11304525870號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407100001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407100001",
+    "date": "113年07月10日",
+    "title": "委託人以中華民國境外低稅負國家或地區之關係企業股權為信託財產，受託人應依所得稅法規定辦理申報及申請配發統一編號等相關事宜，境外受託人無法自行辦理時，得委託代理人代為辦理",
+    "id": "3a6b9bdc5ccc"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.463623+08:00",
+    "doc_number": "台財稅字第11300544980號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407100002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407100002",
+    "date": "113年07月10日",
+    "title": "核釋私立學校於清算期間之房屋稅及地價稅徵免規定",
+    "id": "3d0a6c58dbb6"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.463995+08:00",
+    "doc_number": "台財稅字第11300500880號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406280002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406280002",
+    "date": "113年07月01日",
+    "title": "他益信託贈與案件，以受益人死亡為信託關係消滅事由所涉信託期間之認定",
+    "id": "6cda8f2ae03b"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.464428+08:00",
+    "doc_number": "台財稅字第11300568910號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406280001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406280001",
+    "date": "113年06月27日",
+    "title": "配合113年1月3日修正公布房屋稅條例部分條文，修正房屋稅條例相關釋示函令。",
+    "id": "50f5b0fc5e3f"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.464777+08:00",
+    "doc_number": "台財稅字第11300533430號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406140001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406140001",
+    "date": "113年06月14日",
+    "title": "信託業者擔任受託人，依信託契約以信託專戶之金錢實支實付受益人喪葬費，在遺產稅喪葬費扣除額額度內部分，可免檢附遺產稅完(免)稅證明書",
+    "id": "1bc0b8c7e02d"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.465128+08:00",
+    "doc_number": "台財稅字第11304520940號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406130001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406130001",
+    "date": "113年06月13日",
+    "title": "核釋他益信託房地，受益人為委託人之配偶或已成年子女，且領有身心障礙證明或為精神衛生法第3條第4款規定之病人，或為委託人之未成年子女，於符合一定條件者，准按自住用稅率課徵地價稅及房屋稅。",
+    "id": "78bcd7e7fefd"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.465496+08:00",
+    "doc_number": "台財稅字第11200675690號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202404180001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202404180001",
+    "date": "113年04月18日",
+    "title": "上市或上櫃投資控股公司是否以有價證券買賣為業之認定及其應稅與免稅所得計算規定",
+    "id": "b61a9c9cec9b"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.465853+08:00",
+    "doc_number": "台財稅字第11304503520號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202403210001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202403210001",
+    "date": "113年03月21日",
+    "title": "核釋營業人短、漏開統一發票於法定申報期限前經查獲之處罰原則。",
+    "id": "7fab04ac79c1"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.466215+08:00",
+    "doc_number": "台財稅字第11204700970號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401310001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401310001",
+    "date": "113年01月31日",
+    "title": "核定營利事業辦理資產重估價所適用「歷年來中華民國臺灣地區生產者物價指數及資產重估用物價倍數表」",
+    "id": "c920d19af60b"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.466583+08:00",
+    "doc_number": "台財稅字第11204685080號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401240001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401240001",
+    "date": "113年01月24日",
+    "title": "買賣適用雙幣交易櫃檯買賣機制之指數股票型證券投資信託基金受益憑證之證券交易稅計算規定",
+    "id": "a6e88db4160a"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.466927+08:00",
+    "doc_number": "配合113年1月11日台財稅字第11204616990號令修正發布「外籍專業人士租稅優惠之適用範圍」，廢止本部97年1月8日台財稅字第09600511821號令。",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401110001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401110001",
+    "date": "113年01月11日",
+    "title": "配合113年1月11日台財稅字第11204616990號令修正發布「外籍專業人士租稅優惠之適用範圍」，廢止本部97年1月8日台財稅字第09600511821號令。",
+    "id": "d45fb4df21dc"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.467273+08:00",
+    "doc_number": "台財稅字第11304504120號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401100001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401100001",
+    "date": "113年01月09日",
+    "title": "核定112年度綜合所得稅結算申報新臺幣與人民幣之折算率為4.3877比1。",
+    "id": "d55ac8e25462"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.467642+08:00",
+    "doc_number": "台財稅字第11204665340號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401050001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401050001",
+    "date": "113年01月04日",
+    "title": "核釋以中華民國境外低稅負國家或地區之關係企業股份或資本額為信託財產適用受控外國企業制度規定",
+    "id": "a4ae197e70e2"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.467975+08:00",
+    "doc_number": "台財稅字第11200686770號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312140001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312140001",
+    "date": "112年12月13日",
+    "title": "訂定「一百十三年度營利事業借款利率最高標準及員工薪資通常水準」",
+    "id": "28e4fd5b750b"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:43:39.468311+08:00",
+    "doc_number": "台財稅字第11204684940號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312120001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312120001",
+    "date": "112年12月11日",
+    "title": "調高執行業務者之員工每人每月伙食費免計入薪資所得之上限金額",
+    "id": "802d450e805f"
   }
 ]

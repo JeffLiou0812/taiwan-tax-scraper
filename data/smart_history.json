@@ -118,5 +118,455 @@
     "url": "https://law.dot.gov.twhome.jsp?id=18&parentpath=null&mcustomize=newlaw_view.jsp&dataserno=202412310001",
     "found_at": "2025-08-19 15:19:23",
     "id": "42197956"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.264712+08:00",
+    "doc_number": "台財稅字第11404541300號令",
+    "title": "台財稅字第11404541300號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202507300001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202507300001",
+    "date": "114年07月30日",
+    "id": "786d33fd4e00"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.265919+08:00",
+    "doc_number": "台財稅字第11404579430號令",
+    "title": "台財稅字第11404579430號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202507210001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202507210001",
+    "date": "114年07月18日",
+    "id": "41b495bb8ab0"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.266237+08:00",
+    "doc_number": "台財稅字第11404588630號令",
+    "title": "台財稅字第11404588630號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202506250002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202506250002",
+    "date": "114年06月25日",
+    "id": "b5079358f905"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.266641+08:00",
+    "doc_number": "台財稅字第11400555460號令",
+    "title": "台財稅字第11400555460號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202506250001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202506250001",
+    "date": "114年06月25日",
+    "id": "9628e35707b1"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.267026+08:00",
+    "doc_number": "台財稅字第11304650680號令",
+    "title": "台財稅字第11304650680號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503260002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503260002",
+    "date": "114年03月26日",
+    "id": "63fae26531ca"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.267375+08:00",
+    "doc_number": "台財稅字第11300701150號令",
+    "title": "台財稅字第11300701150號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503260001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503260001",
+    "date": "114年03月26日",
+    "id": "a25965881ae1"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.267782+08:00",
+    "doc_number": "台財稅字第11304658550號令",
+    "title": "台財稅字第11304658550號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503190001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503190001",
+    "date": "114年03月19日",
+    "id": "4fd3e1273eb7"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.268173+08:00",
+    "doc_number": "台財稅字第11300697020號令",
+    "title": "台財稅字第11300697020號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503060001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202503060001",
+    "date": "114年03月06日",
+    "id": "b6f7570c8225"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.268583+08:00",
+    "doc_number": "台財稅字第11304678970號令",
+    "title": "台財稅字第11304678970號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202502040001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202502040001",
+    "date": "114年02月04日",
+    "id": "e30c4d484b27"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.269039+08:00",
+    "doc_number": "台財稅字第11304664860號令",
+    "title": "台財稅字第11304664860號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501220001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501220001",
+    "date": "114年01月22日",
+    "id": "7622385d84d7"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.269494+08:00",
+    "doc_number": "台財稅字第11304682780號令",
+    "title": "台財稅字第11304682780號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501170001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501170001",
+    "date": "114年01月17日",
+    "id": "d1e088b22712"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.269921+08:00",
+    "doc_number": "台財稅字第11300651710號令",
+    "title": "台財稅字第11300651710號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501170002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501170002",
+    "date": "114年01月17日",
+    "id": "25da92a9b8f4"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.270303+08:00",
+    "doc_number": "台財稅字第11404500980號令",
+    "title": "台財稅字第11404500980號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501070002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501070002",
+    "date": "114年01月07日",
+    "id": "dc083f5fc7c0"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.270642+08:00",
+    "doc_number": "台財稅字第11304615290號令",
+    "title": "台財稅字第11304615290號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501070001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202501070001",
+    "date": "114年01月07日",
+    "id": "432767ac25b0"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:23.270908+08:00",
+    "doc_number": "台財稅字第11300645290號令",
+    "title": "台財稅字第11300645290號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412310001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412310001",
+    "date": "113年12月31日",
+    "id": "6d075e29a83f"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.152523+08:00",
+    "doc_number": "台財稅字第11304652000號令",
+    "title": "台財稅字第11304652000號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412240001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412240001",
+    "date": "113年12月24日",
+    "id": "ca569f7bee20"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.152854+08:00",
+    "doc_number": "台財稅字第11304654284號令",
+    "title": "台財稅字第11304654284號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412120001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412120001",
+    "date": "113年12月12日",
+    "id": "c0abdf0b935e"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.153186+08:00",
+    "doc_number": "台財稅字第11300677540號令",
+    "title": "台財稅字第11300677540號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412100001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412100001",
+    "date": "113年12月10日",
+    "id": "366b96d46c01"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.153522+08:00",
+    "doc_number": "台財稅字第11300607350號令",
+    "title": "台財稅字第11300607350號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412060001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412060001",
+    "date": "113年12月06日",
+    "id": "58af876b32a9"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.153845+08:00",
+    "doc_number": "台財稅字第11304656750號令",
+    "title": "台財稅字第11304656750號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412040001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202412040001",
+    "date": "113年12月03日",
+    "id": "3ef132547903"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.154158+08:00",
+    "doc_number": "台財稅字第11300609900號令",
+    "title": "台財稅字第11300609900號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411150001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411150001",
+    "date": "113年11月15日",
+    "id": "79a1571626e1"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.154485+08:00",
+    "doc_number": "廢止財政部98年7月28日台財稅字第09800218900號函等函令",
+    "title": "台財稅字第11304648680號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411140001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411140001",
+    "date": "113年11月13日",
+    "id": "d6483a5e7bb7"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.154798+08:00",
+    "doc_number": "台財稅字第11304553700號令",
+    "title": "台財稅字第11304553700號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411010001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202411010001",
+    "date": "113年11月01日",
+    "id": "5c40803929ce"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.155010+08:00",
+    "doc_number": "台財稅字第11304651400號令",
+    "title": "台財稅字第11304651400號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410180002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410180002",
+    "date": "113年10月18日",
+    "id": "2915dc8f28d1"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.155274+08:00",
+    "doc_number": "台財稅字第11304650700號令",
+    "title": "台財稅字第11304650700號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410180001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410180001",
+    "date": "113年10月18日",
+    "id": "90d6b0cfd8c8"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.155559+08:00",
+    "doc_number": "台財稅字第11304638560號令",
+    "title": "台財稅字第11304638560號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410140001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202410140001",
+    "date": "113年10月14日",
+    "id": "5c539e89dc99"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.155819+08:00",
+    "doc_number": "台財稅字第11300594870號令",
+    "title": "台財稅字第11300594870號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202409040001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202409040001",
+    "date": "113年09月04日",
+    "id": "1ee1fc1d4e79"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.156085+08:00",
+    "doc_number": "廢止本部91年10月11日台財稅字第0910456289號函",
+    "title": "台財稅字第11300607061號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202408160001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202408160001",
+    "date": "113年08月16日",
+    "id": "5a2c2d5f1c82"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.156348+08:00",
+    "doc_number": "台財稅字第11300570850號令",
+    "title": "台財稅字第11300570850號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202408050001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202408050001",
+    "date": "113年08月05日",
+    "id": "15e414155f8b"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:26.156635+08:00",
+    "doc_number": "台財稅字第11304583280號令",
+    "title": "台財稅字第11304583280號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407110001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407110001",
+    "date": "113年07月11日",
+    "id": "73026b140f6f"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.053022+08:00",
+    "doc_number": "台財稅字第11304525870號令",
+    "title": "台財稅字第11304525870號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407100001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407100001",
+    "date": "113年07月10日",
+    "id": "482581006425"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.053383+08:00",
+    "doc_number": "台財稅字第11300544980號令",
+    "title": "台財稅字第11300544980號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407100002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202407100002",
+    "date": "113年07月10日",
+    "id": "d0c496ab2ac2"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.053782+08:00",
+    "doc_number": "台財稅字第11300500880號令",
+    "title": "台財稅字第11300500880號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406280002",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406280002",
+    "date": "113年07月01日",
+    "id": "942f245ddcef"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.054126+08:00",
+    "doc_number": "台財稅字第11300568910號令",
+    "title": "台財稅字第11300568910號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406280001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406280001",
+    "date": "113年06月27日",
+    "id": "da197ca81e88"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.054468+08:00",
+    "doc_number": "台財稅字第11300533430號令",
+    "title": "台財稅字第11300533430號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406140001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406140001",
+    "date": "113年06月14日",
+    "id": "98429b37cfbe"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.054799+08:00",
+    "doc_number": "台財稅字第11304520940號令",
+    "title": "台財稅字第11304520940號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406130001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202406130001",
+    "date": "113年06月13日",
+    "id": "b53cf9ce5f1a"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.055114+08:00",
+    "doc_number": "台財稅字第11200675690號令",
+    "title": "台財稅字第11200675690號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202404180001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202404180001",
+    "date": "113年04月18日",
+    "id": "e776a5890160"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.055451+08:00",
+    "doc_number": "台財稅字第11304503520號令",
+    "title": "台財稅字第11304503520號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202403210001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202403210001",
+    "date": "113年03月21日",
+    "id": "2e1c515419db"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.055769+08:00",
+    "doc_number": "台財稅字第11204700970號令",
+    "title": "台財稅字第11204700970號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401310001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401310001",
+    "date": "113年01月31日",
+    "id": "9bcc19751838"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.056083+08:00",
+    "doc_number": "台財稅字第11204685080號令",
+    "title": "台財稅字第11204685080號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401240001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401240001",
+    "date": "113年01月24日",
+    "id": "c9d7b763a330"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.056386+08:00",
+    "doc_number": "配合113年1月11日台財稅字第11204616990號令修正發布「外籍專業人士租稅優惠之適用範圍」，廢止本部97年1月8日台財稅字第09600511821號令。",
+    "title": "台財稅字第11204616991號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401110001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401110001",
+    "date": "113年01月11日",
+    "id": "e206e4e79096"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.056711+08:00",
+    "doc_number": "台財稅字第11304504120號令",
+    "title": "台財稅字第11304504120號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401100001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401100001",
+    "date": "113年01月09日",
+    "id": "8439bb6efd51"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.057018+08:00",
+    "doc_number": "台財稅字第11204665340號令",
+    "title": "台財稅字第11204665340號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401050001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202401050001",
+    "date": "113年01月04日",
+    "id": "f92bdad8c0dc"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.057332+08:00",
+    "doc_number": "台財稅字第11200686770號令",
+    "title": "台財稅字第11200686770號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312140001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312140001",
+    "date": "112年12月13日",
+    "id": "561d943978a6"
+  },
+  {
+    "source": "DOT_Taiwan",
+    "scrape_time": "2025-08-20T22:33:29.057653+08:00",
+    "doc_number": "台財稅字第11204684940號令",
+    "title": "台財稅字第11204684940號令",
+    "url": "https://law.dot.gov.tw/law-ch/home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312120001",
+    "original_url": "home.jsp?id=18&parentpath=0%2C7&mcustomize=newlaw_view.jsp&dataserno=202312120001",
+    "date": "112年12月11日",
+    "id": "2ce8d58a3ff2"
   }
 ]

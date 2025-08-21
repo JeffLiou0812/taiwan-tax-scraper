@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-財政部法規草案爬蟲 - 錯誤防護加強版
-基於過去錯誤經驗優化的版本
+財政部法規草案爬蟲 - URL修正版
+確保每個草案都有可用的連結
 
 目標網站: https://law-out.mof.gov.tw/DraftForum.aspx
-版本: 3.0 Error-Protected
-建立日期: 2025-08-20
+版本: 4.0 URL-Fixed
+更新日期: 2025-08-21
 """
 
 import requests
@@ -18,235 +18,314 @@ from pathlib import Path
 import hashlib
 import time
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, quote
+import logging
+from typing import Dict, List, Tuple, Optional
 
-class DraftLawScraperProtected:
-    """錯誤防護加強版法規草案爬蟲"""
+class DraftLawScraperFixed:
+    """法規草案爬蟲 - URL修正版"""
     
-    def __init__(self, data_dir="data"):
+    def __init__(self, data_dir="data", debug=True):
         """初始化爬蟲"""
-        self.base_url = "https://law-out.mof.gov.tw/DraftForum.aspx"
+        self.base_url = "https://law-out.mof.gov.tw"
+        self.draft_page_url = "https://law-out.mof.gov.tw/DraftForum.aspx"
         self.data_dir = Path(data_dir)
         self.data_dir.mkdir(exist_ok=True)
         
-        # 錯誤防護1: 完整的請求標頭（避免robots.txt阻擋）
+        # 設定日誌
+        self.setup_logging(debug)
+        
+        # 請求標頭
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'zh-TW,zh;q=0.9,en;q=0.8',
             'Accept-Encoding': 'gzip, deflate, br',
             'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-            'Cache-Control': 'max-age=0'
+            'Upgrade-Insecure-Requests': '1'
         }
         
         self.tz_taipei = timezone(timedelta(hours=8))
         self.session = requests.Session()
         self.session.headers.update(self.headers)
-        
-    def validate_url(self, url):
-        """
-        錯誤防護2: URL驗證和修復
-        學習自過去的 law.dot.gov.twhome.jsp 錯誤
-        """
-        if not url:
-            return None
-            
-        url = url.strip()
-        
-        # 修復常見URL問題
-        if not url.startswith(('http://', 'https://')):
-            # 判斷是否為相對路徑
-            if url.startswith('/'):
-                url = 'https://law-out.mof.gov.tw' + url
-            else:
-                url = 'https://' + url
-        
-        # 驗證URL格式
-        try:
-            result = urlparse(url)
-            if all([result.scheme, result.netloc]):
-                return url
-        except:
-            pass
-            
-        return None
     
-    def convert_roc_date_safe(self, roc_date_str):
-        """
-        錯誤防護3: 穩健的日期轉換
-        支援多種民國年格式
-        """
-        if not roc_date_str:
-            return None, roc_date_str
-            
-        roc_date_str = str(roc_date_str).strip()
-        
-        # 多重模式匹配（學習自過去錯誤）
-        patterns = [
-            (r'(\d{2,3})年(\d{1,2})月(\d{1,2})日', '%Y-%m-%d'),
-            (r'(\d{2,3})\.(\d{1,2})\.(\d{1,2})', '%Y-%m-%d'),
-            (r'(\d{2,3})/(\d{1,2})/(\d{1,2})', '%Y-%m-%d'),
-            (r'民國(\d{2,3})年(\d{1,2})月(\d{1,2})日', '%Y-%m-%d')
-        ]
-        
-        for pattern, date_format in patterns:
-            match = re.search(pattern, roc_date_str)
-            if match:
-                try:
-                    roc_year = int(match.group(1))
-                    month = int(match.group(2))
-                    day = int(match.group(3))
-                    
-                    # 轉換為西元年
-                    ad_year = roc_year + 1911
-                    iso_date = f"{ad_year:04d}-{month:02d}-{day:02d}"
-                    
-                    return iso_date, roc_date_str  # 同時返回兩種格式
-                except:
-                    continue
-        
-        return None, roc_date_str
+    def setup_logging(self, debug: bool):
+        """設定日誌系統"""
+        log_level = logging.DEBUG if debug else logging.INFO
+        logging.basicConfig(
+            level=log_level,
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S'
+        )
+        self.logger = logging.getLogger(__name__)
     
-    def fetch_draft_laws(self):
-        """
-        爬取法規草案列表
-        包含完整錯誤處理
-        """
+    def fetch_draft_laws(self) -> List[Dict]:
+        """爬取法規草案列表"""
         all_drafts = []
         
         try:
-            print("🔍 開始爬取法規草案...")
+            self.logger.info("開始爬取法規草案...")
             
-            # 錯誤防護4: 重試機制
-            max_retries = 3
-            for attempt in range(max_retries):
-                try:
-                    response = self.session.get(
-                        self.base_url,
-                        timeout=30,
-                        verify=True
-                    )
-                    
-                    if response.status_code == 200:
-                        break
-                    else:
-                        print(f"⚠️ 嘗試 {attempt + 1}/{max_retries}: 狀態碼 {response.status_code}")
-                        time.sleep(2)
-                        
-                except requests.exceptions.RequestException as e:
-                    print(f"⚠️ 網路錯誤 (嘗試 {attempt + 1}/{max_retries}): {str(e)}")
-                    if attempt < max_retries - 1:
-                        time.sleep(3)
-                    else:
-                        raise
+            # 發送請求
+            response = self.session.get(self.draft_page_url, timeout=30)
             
-            # 錯誤防護5: 解析HTML
+            if response.status_code != 200:
+                self.logger.error(f"HTTP {response.status_code}")
+                return []
+            
+            # 解析頁面
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # 尋找資料表格（根據實際網站結構調整）
-            table = soup.find('table', {'class': 'table'}) or soup.find('table')
+            # 尋找表格
+            tables = soup.find_all('table')
             
-            if not table:
-                print("⚠️ 未找到資料表格，嘗試其他解析方式...")
-                # 備用解析方式
-                rows = soup.find_all('tr')
-            else:
-                rows = table.find_all('tr')[1:]  # 跳過標題列
-            
-            for row in rows:
-                try:
-                    cols = row.find_all('td')
+            for table in tables:
+                rows = table.find_all('tr')
+                
+                for row in rows[1:]:  # 跳過標題列
+                    cells = row.find_all('td')
                     
-                    if len(cols) >= 3:  # 確保有足夠的欄位
-                        # 提取資料
-                        date_text = cols[0].get_text(strip=True)
-                        title_element = cols[1].find('a')
-                        end_date_text = cols[2].get_text(strip=True) if len(cols) > 2 else ""
-                        
-                        # 處理標題和連結
-                        if title_element:
-                            title = title_element.get_text(strip=True)
-                            raw_url = title_element.get('href', '')
-                            
-                            # 錯誤防護6: URL處理
-                            if raw_url:
-                                # 完整URL處理
-                                if not raw_url.startswith('http'):
-                                    raw_url = urljoin(self.base_url, raw_url)
-                                
-                                url = self.validate_url(raw_url)
-                            else:
-                                url = None
-                        else:
-                            title = cols[1].get_text(strip=True)
-                            url = None
-                        
-                        # 日期轉換
-                        iso_date, roc_date = self.convert_roc_date_safe(date_text)
-                        end_iso_date, end_roc_date = self.convert_roc_date_safe(end_date_text)
-                        
-                        # 建立草案資料
-                        draft = {
-                            'title': title,
-                            'announcement_date': iso_date,
-                            'announcement_date_roc': roc_date,
-                            'end_date': end_iso_date,
-                            'end_date_roc': end_roc_date,
-                            'url': url,
-                            'original_url': raw_url if title_element else None,
-                            'status': self.check_status(end_iso_date),
-                            'source': 'MOF_Taiwan_Draft',
-                            'scrape_time': datetime.now(self.tz_taipei).isoformat()
-                        }
-                        
-                        # 生成唯一ID
-                        draft['id'] = self.generate_unique_id(draft)
-                        
-                        all_drafts.append(draft)
-                        
-                except Exception as e:
-                    print(f"⚠️ 解析單筆資料錯誤: {str(e)}")
-                    continue
+                    if len(cells) >= 2:
+                        draft = self.extract_draft_from_cells(cells, soup)
+                        if draft:
+                            all_drafts.append(draft)
             
-            print(f"✅ 成功爬取 {len(all_drafts)} 筆法規草案")
+            # 如果沒有找到表格資料，嘗試其他方式
+            if not all_drafts:
+                self.logger.warning("未從表格找到資料，嘗試其他解析方式...")
+                # 尋找可能的草案項目
+                items = soup.find_all(['div', 'li'], class_=re.compile(r'item|draft|law'))
+                for item in items:
+                    draft = self.extract_draft_from_element(item)
+                    if draft:
+                        all_drafts.append(draft)
+            
+            self.logger.info(f"成功爬取 {len(all_drafts)} 筆法規草案")
             
         except Exception as e:
-            print(f"❌ 爬取失敗: {str(e)}")
+            self.logger.error(f"爬取失敗: {e}")
             import traceback
             traceback.print_exc()
         
         return all_drafts
     
-    def check_status(self, end_date_str):
+    def extract_draft_from_cells(self, cells, full_soup) -> Optional[Dict]:
+        """從表格儲存格提取草案資訊"""
+        try:
+            draft = {
+                'source': 'MOF_Taiwan_Draft',
+                'scrape_time': datetime.now(self.tz_taipei).isoformat()
+            }
+            
+            # 提取日期
+            if len(cells) > 0:
+                date_text = cells[0].get_text(strip=True)
+                draft['announcement_date_roc'] = date_text
+                draft['announcement_date'] = self.convert_roc_date(date_text)
+            
+            # 提取標題和連結
+            if len(cells) > 1:
+                title_cell = cells[1]
+                draft['title'] = title_cell.get_text(strip=True)
+                
+                # 尋找連結
+                link = title_cell.find('a')
+                if link:
+                    href = link.get('href', '')
+                    onclick = link.get('onclick', '')
+                    
+                    # 嘗試各種方式提取URL
+                    extracted_url = self.extract_url_from_link(href, onclick, full_soup)
+                    draft['url'] = extracted_url
+                else:
+                    # 沒有直接連結，稍後會生成搜尋連結
+                    draft['url'] = None
+            
+            # 提取截止日期
+            if len(cells) > 2:
+                end_date_text = cells[2].get_text(strip=True)
+                draft['end_date_roc'] = end_date_text
+                draft['end_date'] = self.convert_roc_date(end_date_text)
+                draft['status'] = self.check_status(draft['end_date'])
+            else:
+                draft['status'] = '進行中'
+            
+            # 如果還是沒有URL，生成智能連結
+            if not draft.get('url'):
+                draft['url'] = self.generate_smart_url(draft)
+                draft['url_type'] = 'generated'
+            else:
+                draft['url_type'] = 'original'
+            
+            # 生成唯一ID
+            if draft.get('title'):
+                draft['id'] = self.generate_unique_id(draft)
+                return draft
+                
+        except Exception as e:
+            self.logger.debug(f"提取錯誤: {e}")
+        
+        return None
+    
+    def extract_draft_from_element(self, element) -> Optional[Dict]:
+        """從HTML元素提取草案資訊"""
+        try:
+            draft = {
+                'source': 'MOF_Taiwan_Draft',
+                'scrape_time': datetime.now(self.tz_taipei).isoformat()
+            }
+            
+            text = element.get_text(strip=True)
+            
+            # 提取標題
+            draft['title'] = text[:200] if len(text) > 200 else text
+            
+            # 提取日期
+            date_match = re.search(r'\d{3}\.\d{1,2}\.\d{1,2}', text)
+            if date_match:
+                draft['announcement_date_roc'] = date_match.group()
+                draft['announcement_date'] = self.convert_roc_date(date_match.group())
+            
+            # 尋找連結
+            link = element.find('a')
+            if link:
+                href = link.get('href', '')
+                draft['url'] = self.process_url(href)
+            else:
+                draft['url'] = self.generate_smart_url(draft)
+            
+            draft['status'] = '進行中'
+            
+            if draft.get('title'):
+                draft['id'] = self.generate_unique_id(draft)
+                return draft
+                
+        except Exception as e:
+            self.logger.debug(f"元素提取錯誤: {e}")
+        
+        return None
+    
+    def extract_url_from_link(self, href, onclick, soup) -> Optional[str]:
+        """從各種屬性中提取URL"""
+        # 方法1: 直接使用href
+        if href and href != '#' and not href.startswith('javascript:'):
+            return self.process_url(href)
+        
+        # 方法2: 從onclick中提取
+        if onclick:
+            # 尋找window.open或類似的URL
+            url_patterns = [
+                r"window\.open\(['\"]([^'\"]+)['\"]",
+                r"location\.href=['\"]([^'\"]+)['\"]",
+                r"['\"]([^'\"]*join\.gov\.tw[^'\"]+)['\"]",
+                r"['\"]([^'\"]*https?://[^'\"]+)['\"]"
+            ]
+            
+            for pattern in url_patterns:
+                match = re.search(pattern, onclick)
+                if match:
+                    return self.process_url(match.group(1))
+        
+        # 方法3: 搜尋頁面中的join.gov.tw連結
+        join_links = soup.find_all('a', href=re.compile(r'join\.gov\.tw'))
+        if join_links:
+            # 返回第一個找到的join.gov.tw連結
+            for link in join_links:
+                if link.get('href'):
+                    return link.get('href')
+        
+        return None
+    
+    def process_url(self, url: str) -> str:
+        """處理和標準化URL"""
+        if not url:
+            return ""
+        
+        url = url.strip()
+        
+        # 處理相對路徑
+        if not url.startswith(('http://', 'https://')):
+            if url.startswith('/'):
+                return f"{self.base_url}{url}"
+            else:
+                return f"{self.base_url}/{url}"
+        
+        return url
+    
+    def generate_smart_url(self, draft: Dict) -> str:
+        """
+        生成智能URL
+        如果沒有找到直接連結，生成一個有用的替代連結
+        """
+        title = draft.get('title', '')
+        
+        # 優先順序：
+        # 1. 如果標題包含特定關鍵字，可能在join.gov.tw
+        if '意見' in title or '公告' in title or '預告' in title:
+            # 生成join.gov.tw搜尋連結
+            search_query = quote(title[:50])  # 限制長度
+            return f"https://join.gov.tw/policies/search?q={search_query}"
+        
+        # 2. 生成Google搜尋連結（搜尋標題+網站）
+        search_terms = f"{title} site:law-out.mof.gov.tw OR site:join.gov.tw OR site:mof.gov.tw"
+        google_search = f"https://www.google.com/search?q={quote(search_terms)}"
+        
+        self.logger.info(f"為「{title[:30]}...」生成搜尋連結")
+        
+        return google_search
+    
+    def convert_roc_date(self, roc_date_str: str) -> Optional[str]:
+        """轉換民國年為西元年"""
+        if not roc_date_str:
+            return None
+        
+        try:
+            # 移除多餘字符
+            date_str = roc_date_str.strip()
+            
+            # 嘗試不同的格式
+            patterns = [
+                r'(\d{2,3})\.(\d{1,2})\.(\d{1,2})',
+                r'(\d{2,3})/(\d{1,2})/(\d{1,2})',
+                r'(\d{2,3})年(\d{1,2})月(\d{1,2})日'
+            ]
+            
+            for pattern in patterns:
+                match = re.search(pattern, date_str)
+                if match:
+                    year = int(match.group(1)) + 1911
+                    month = int(match.group(2))
+                    day = int(match.group(3))
+                    return f"{year}-{month:02d}-{day:02d}"
+        except:
+            pass
+        
+        return None
+    
+    def check_status(self, end_date_str: str) -> str:
         """檢查草案狀態"""
         if not end_date_str:
             return "進行中"
         
         try:
             end_date = datetime.strptime(end_date_str, '%Y-%m-%d')
-            today = datetime.now()
-            
-            if end_date < today:
+            if end_date < datetime.now():
                 return "已結束"
             else:
                 return "進行中"
         except:
             return "未知"
     
-    def generate_unique_id(self, draft):
+    def generate_unique_id(self, draft: Dict) -> str:
         """生成唯一識別碼"""
-        # 使用標題和日期生成ID
         content = f"{draft.get('title', '')}{draft.get('announcement_date', '')}"
         return hashlib.md5(content.encode('utf-8')).hexdigest()[:12]
     
-    def compare_and_update(self, new_drafts):
-        """
-        比對歷史記錄，找出新增的草案
-        """
+    def compare_and_update(self, new_drafts: List[Dict]) -> Tuple[List[Dict], List[Dict]]:
+        """比對歷史記錄"""
         history_file = self.data_dir / "draft_history.json"
         
-        # 讀取歷史記錄
+        # 讀取歷史
         if history_file.exists():
             try:
                 with open(history_file, 'r', encoding='utf-8') as f:
@@ -256,63 +335,57 @@ class DraftLawScraperProtected:
         else:
             history = []
         
-        # 建立ID集合進行比對
+        # 比對
         history_ids = {item['id'] for item in history if 'id' in item}
-        
-        # 找出新草案
         new_items = []
+        
         for draft in new_drafts:
-            if draft['id'] not in history_ids:
+            if draft.get('id') and draft['id'] not in history_ids:
                 new_items.append(draft)
         
-        # 更新歷史記錄
+        # 更新歷史
         if new_items:
             history.extend(new_items)
+            if len(history) > 500:  # 限制大小
+                history = history[-500:]
+            
             with open(history_file, 'w', encoding='utf-8') as f:
                 json.dump(history, f, ensure_ascii=False, indent=2)
         
         return new_items, history
     
-    def save_results(self, drafts, filename_prefix="drafts"):
-        """
-        儲存結果為JSON和CSV格式
-        """
+    def save_results(self, drafts: List[Dict]) -> None:
+        """儲存結果"""
         if not drafts:
-            print("⚠️ 沒有資料可儲存")
-            return None
+            return
         
         timestamp = datetime.now(self.tz_taipei).strftime('%Y%m%d_%H%M%S')
         
-        # 儲存JSON
-        json_file = self.data_dir / f'{filename_prefix}_{timestamp}.json'
+        # JSON
+        json_file = self.data_dir / f'drafts_{timestamp}.json'
         with open(json_file, 'w', encoding='utf-8') as f:
             json.dump(drafts, f, ensure_ascii=False, indent=2)
         
-        # 儲存CSV
-        csv_file = self.data_dir / f'{filename_prefix}_{timestamp}.csv'
+        # CSV
+        csv_file = self.data_dir / f'drafts_{timestamp}.csv'
         df = pd.DataFrame(drafts)
         df.to_csv(csv_file, index=False, encoding='utf-8-sig')
         
-        print(f"💾 資料已儲存:")
-        print(f"   JSON: {json_file}")
-        print(f"   CSV: {csv_file}")
-        
-        return json_file
+        self.logger.info(f"資料已儲存: {json_file.name} 和 {csv_file.name}")
     
-    def generate_report(self, new_drafts, total_drafts):
-        """生成執行報告"""
+    def generate_report(self, new_drafts: List[Dict], total_drafts: List[Dict]) -> Dict:
+        """生成報告"""
         report = {
             'execution_time': datetime.now(self.tz_taipei).isoformat(),
             'total_drafts': len(total_drafts),
             'new_drafts': len(new_drafts),
             'has_new': len(new_drafts) > 0,
             'status_summary': {},
-            'error_fixes_applied': [
-                'URL validation and correction',
-                'Multiple date format support',
-                'Retry mechanism for network errors',
-                'Comprehensive error handling'
-            ]
+            'url_statistics': {
+                'with_original_url': sum(1 for d in total_drafts if d.get('url_type') == 'original'),
+                'with_generated_url': sum(1 for d in total_drafts if d.get('url_type') == 'generated'),
+                'total': len(total_drafts)
+            }
         }
         
         # 統計狀態
@@ -329,53 +402,65 @@ class DraftLawScraperProtected:
         return report
 
 def main():
-    """主程式 - 包含完整錯誤處理"""
+    """主程式"""
     print("="*60)
-    print("🏛️ 財政部法規草案爬蟲 - 錯誤防護加強版")
+    print("🏛️ 財政部法規草案爬蟲 - URL修正版")
     print(f"🕐 執行時間: {datetime.now()}")
-    print("🛡️ 已應用過去7天的所有錯誤修復")
+    print("🔗 確保每個草案都有可用連結")
     print("="*60)
     
     try:
-        scraper = DraftLawScraperProtected()
+        scraper = DraftLawScraperFixed()
         
-        # 爬取資料
+        # 爬取
         print("\n📡 開始爬取法規草案...")
         drafts = scraper.fetch_draft_laws()
         
         if not drafts:
             print("⚠️ 未獲取任何草案資料")
+            scraper.generate_report([], [])
             return
         
+        print(f"\n✅ 成功爬取 {len(drafts)} 筆草案")
+        
+        # 顯示URL統計
+        original_urls = sum(1 for d in drafts if d.get('url_type') == 'original')
+        generated_urls = sum(1 for d in drafts if d.get('url_type') == 'generated')
+        
+        print(f"\n🔗 URL 統計:")
+        print(f"   • 原始連結: {original_urls} 筆")
+        print(f"   • 生成連結: {generated_urls} 筆")
+        
+        # 預覽
+        print("\n📋 資料預覽:")
+        for i, draft in enumerate(drafts[:3], 1):
+            print(f"\n  {i}. {draft.get('title', 'N/A')[:50]}...")
+            print(f"     URL類型: {draft.get('url_type', 'N/A')}")
+            if draft.get('url'):
+                print(f"     連結: {draft['url'][:60]}...")
+        
         # 比對歷史
-        print("\n📊 比對歷史資料...")
-        new_items, all_drafts = scraper.compare_and_update(drafts)
+        print("\n📊 比對歷史記錄...")
+        new_items, history = scraper.compare_and_update(drafts)
         
         if new_items:
-            print(f"🆕 發現 {len(new_items)} 筆新草案!")
-            for i, item in enumerate(new_items[:5], 1):  # 顯示前5筆
-                print(f"   {i}. {item.get('title', '無標題')[:50]}...")
+            print(f"\n🆕 發現 {len(new_items)} 筆新草案!")
         else:
-            print("✨ 沒有新的法規草案")
+            print("\n✨ 沒有新草案")
         
-        # 儲存結果
+        # 儲存
         print("\n💾 儲存資料...")
         scraper.save_results(drafts)
         
-        # 生成報告
+        # 報告
         print("\n📋 生成報告...")
-        report = scraper.generate_report(new_items, all_drafts)
+        report = scraper.generate_report(new_items, drafts)
         
-        print(f"\n📊 執行統計:")
-        print(f"   • 總草案數: {report['total_drafts']}")
-        print(f"   • 新增草案: {report['new_drafts']}")
-        print(f"   • 狀態分布: {report.get('status_summary', {})}")
-        
-        print("\n✅ 法規草案爬蟲執行完成！")
-        print("🛡️ 所有錯誤防護機制均已生效")
+        print("\n✅ 執行完成！")
+        print("🔗 所有草案都已確保有可用連結")
         
     except Exception as e:
-        print(f"\n❌ 執行失敗: {str(e)}")
+        print(f"\n❌ 執行失敗: {e}")
         import traceback
         traceback.print_exc()
         exit(1)

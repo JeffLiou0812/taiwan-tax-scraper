@@ -1,0 +1,80 @@
+[
+  {
+    "title": "114.08.04",
+    "announcement_date": null,
+    "announcement_date_roc": "1.",
+    "end_date": "2025-09-03",
+    "end_date_roc": "財政部公告：預告修正「使用牌照稅法」第五條草案（預告終止日114.09.03）",
+    "url": null,
+    "original_url": null,
+    "status": "進行中",
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-08-21T23:34:23.584554+08:00",
+    "id": "41c2491e0afd"
+  },
+  {
+    "title": "114.07.23",
+    "announcement_date": null,
+    "announcement_date_roc": "2.",
+    "end_date": "2025-09-22",
+    "end_date_roc": "財政部公告：預告廢止「地方建設基金收支保管及運用辦法」（預告終止日114.09.22）",
+    "url": null,
+    "original_url": null,
+    "status": "進行中",
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-08-21T23:34:23.584675+08:00",
+    "id": "1beb68b91e99"
+  },
+  {
+    "title": "114.07.25",
+    "announcement_date": null,
+    "announcement_date_roc": "3.",
+    "end_date": "2025-09-23",
+    "end_date_roc": "財政部公告：預告「新增其他經財政部核定不計入房屋稅條例第五條第一項第一款第二目至第四目納稅義務人全國總持有應稅房屋戶數及適用差別稅率之房屋」草案（預告終止日114.09.23）",
+    "url": null,
+    "original_url": null,
+    "status": "進行中",
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-08-21T23:34:23.584757+08:00",
+    "id": "56bc983580c4"
+  },
+  {
+    "title": "114.08.01",
+    "announcement_date": null,
+    "announcement_date_roc": "4.",
+    "end_date": "2025-09-30",
+    "end_date_roc": "財政部公告：預告廢止「農會信用部業務管理辦法」、「農會信用部漁會信用部業務輔導辦法」、「農會信用部漁會信用部資金融通辦法」、「農會信用部漁會信用部逾期放款催收款及呆帳處理辦法」、「農會信用部漁會信用部對個人贊助會員及團體贊助會員授信及限額標準」、「農會信用部漁會信用部稽核制度實施辦法」、「漁會信用部業務管理辦法」、「漁會信用部及其分部主任應具備資格條件準則」（預告終止日114.09.30）",
+    "url": null,
+    "original_url": null,
+    "status": "進行中",
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-08-21T23:34:23.584862+08:00",
+    "id": "266874dc4f29"
+  },
+  {
+    "title": "114.08.08",
+    "announcement_date": null,
+    "announcement_date_roc": "5.",
+    "end_date": "2025-10-07",
+    "end_date_roc": "財政部公告：預告「公告個人依中華民國一百十四年五月七日修正公布產業創新條例第二十三條之二規定，投資國內高風險新創事業公司自綜合所得總額中減除之金額，應計入個人之基本所得額」草案（預告終止日114.10.07）",
+    "url": null,
+    "original_url": null,
+    "status": "進行中",
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-08-21T23:34:23.584941+08:00",
+    "id": "5bccf60f922c"
+  },
+  {
+    "title": "114.08.11",
+    "announcement_date": null,
+    "announcement_date_roc": "6.",
+    "end_date": "2025-10-13",
+    "end_date_roc": "財政部公告：預告「有限合夥組織創業投資事業租稅獎勵所得計算及申報辦法」修正草案（預告終止日114.10.13）",
+    "url": null,
+    "original_url": null,
+    "status": "進行中",
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-08-21T23:34:23.585019+08:00",
+    "id": "0e195af9c361"
+  }
+]

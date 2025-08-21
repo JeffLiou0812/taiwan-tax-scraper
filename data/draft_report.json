@@ -1,0 +1,15 @@
+{
+  "execution_time": "2025-08-21T23:34:23.587671+08:00",
+  "total_drafts": 6,
+  "new_drafts": 6,
+  "has_new": true,
+  "status_summary": {
+    "進行中": 6
+  },
+  "error_fixes_applied": [
+    "URL validation and correction",
+    "Multiple date format support",
+    "Retry mechanism for network errors",
+    "Comprehensive error handling"
+  ]
+}

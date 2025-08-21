@@ -1,0 +1,16 @@
+{
+  "execution_time": "2025-08-21T23:34:21.589982+08:00",
+  "execution_date": "2025-08-21",
+  "total_checked": 45,
+  "new_count": 0,
+  "has_new": false,
+  "source": "law.dot.gov.tw",
+  "scraper_version": "7.0_Complete_Fixed",
+  "error_statistics": {
+    "url_errors_fixed": 0,
+    "parse_errors_recovered": 0,
+    "retry_attempts": 0,
+    "total_errors": 0
+  },
+  "status": "success"
+}

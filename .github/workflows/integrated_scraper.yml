@@ -1,0 +1,217 @@
+name: Integrated Tax Law Scraper
+
+# 錯誤防護：明確定義權限（避免 exit code 128）
+permissions:
+  contents: write
+  issues: write
+  actions: read
+
+on:
+  schedule:
+    # 每天台灣時間 18:00 執行 (UTC 10:00)
+    - cron: '0 10 * * *'
+  workflow_dispatch:  # 允許手動觸發
+
+jobs:
+  scrape_all:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Step 1: 檢出程式碼
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0  # 獲取完整歷史記錄
+    
+    # Step 2: 設定 Python 環境
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+    
+    # Step 3: 安裝相依套件
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4 pandas lxml
+        echo "✅ 套件安裝完成"
+    
+    # Step 4: 執行稅務函釋爬蟲
+    - name: Run Tax Ruling Scraper
+      id: tax_scraper
+      continue-on-error: true  # 即使失敗也繼續執行
+      run: |
+        echo "🔍 開始爬取稅務函釋..."
+        python smart_scraper.py
+        
+        # 讀取報告
+        if [ -f "data/daily_report.json" ]; then
+          HAS_NEW_TAX=$(python -c "import json; data=json.load(open('data/daily_report.json')); print(str(data.get('has_new', False)).lower())")
+          NEW_TAX_COUNT=$(python -c "import json; data=json.load(open('data/daily_report.json')); print(data.get('new_count', 0))")
+          echo "has_new_tax=$HAS_NEW_TAX" >> $GITHUB_OUTPUT
+          echo "new_tax_count=$NEW_TAX_COUNT" >> $GITHUB_OUTPUT
+          echo "✅ 稅務函釋爬取完成，新增 $NEW_TAX_COUNT 筆"
+        else
+          echo "has_new_tax=false" >> $GITHUB_OUTPUT
+          echo "new_tax_count=0" >> $GITHUB_OUTPUT
+          echo "⚠️ 稅務函釋爬取無結果"
+        fi
+    
+    # Step 5: 執行法規草案爬蟲
+    - name: Run Draft Law Scraper
+      id: draft_scraper
+      continue-on-error: true
+      run: |
+        echo "🔍 開始爬取法規草案..."
+        python draft_law_scraper.py
+        
+        # 讀取報告
+        if [ -f "data/draft_report.json" ]; then
+          HAS_NEW_DRAFT=$(python -c "import json; data=json.load(open('data/draft_report.json')); print(str(data.get('has_new', False)).lower())")
+          NEW_DRAFT_COUNT=$(python -c "import json; data=json.load(open('data/draft_report.json')); print(data.get('new_drafts', 0))")
+          echo "has_new_draft=$HAS_NEW_DRAFT" >> $GITHUB_OUTPUT
+          echo "new_draft_count=$NEW_DRAFT_COUNT" >> $GITHUB_OUTPUT
+          echo "✅ 法規草案爬取完成，新增 $NEW_DRAFT_COUNT 筆"
+        else
+          echo "has_new_draft=false" >> $GITHUB_OUTPUT
+          echo "new_draft_count=0" >> $GITHUB_OUTPUT
+          echo "⚠️ 法規草案爬取無結果"
+        fi
+    
+    # Step 6: 建立整合通知 (只在有新資料時)
+    - name: Create Integrated Notification
+      if: steps.tax_scraper.outputs.has_new_tax == 'true' || steps.draft_scraper.outputs.has_new_draft == 'true'
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const fs = require('fs');
+          const now = new Date().toLocaleString('zh-TW', {timeZone: 'Asia/Taipei'});
+          
+          let body = `# 📊 稅務法規每日更新報告\n\n`;
+          body += `**執行時間**: ${now}\n\n`;
+          
+          // 稅務函釋部分
+          const hasTax = '${{ steps.tax_scraper.outputs.has_new_tax }}' === 'true';
+          const taxCount = '${{ steps.tax_scraper.outputs.new_tax_count }}';
+          
+          if (hasTax) {
+            body += `## 🏛️ 稅務函釋更新\n\n`;
+            body += `發現 **${taxCount}** 筆新函釋\n\n`;
+            
+            try {
+              const taxData = JSON.parse(fs.readFileSync('data/today_new.json', 'utf8'));
+              taxData.slice(0, 5).forEach((item, i) => {
+                body += `${i + 1}. **${item.title || '無標題'}**\n`;
+                body += `   - 日期: ${item.date || 'N/A'}\n`;
+                body += `   - 字號: ${item.doc_number || 'N/A'}\n`;
+                if (item.url) {
+                  body += `   - 🔗 [查看原文](${item.url})\n`;
+                }
+                body += `\n`;
+              });
+              if (taxData.length > 5) {
+                body += `...還有 ${taxData.length - 5} 筆更多函釋\n\n`;
+              }
+            } catch (e) {
+              body += `詳細資料載入失敗\n\n`;
+            }
+          }
+          
+          // 法規草案部分
+          const hasDraft = '${{ steps.draft_scraper.outputs.has_new_draft }}' === 'true';
+          const draftCount = '${{ steps.draft_scraper.outputs.new_draft_count }}';
+          
+          if (hasDraft) {
+            body += `## 📜 法規草案更新\n\n`;
+            body += `發現 **${draftCount}** 筆新草案\n\n`;
+            
+            try {
+              const draftFiles = fs.readdirSync('data').filter(f => f.startsWith('drafts_'));
+              if (draftFiles.length > 0) {
+                const latestDraft = draftFiles.sort().pop();
+                const draftData = JSON.parse(fs.readFileSync(`data/${latestDraft}`, 'utf8'));
+                
+                draftData.slice(0, 5).forEach((item, i) => {
+                  body += `${i + 1}. **${item.title || '無標題'}**\n`;
+                  body += `   - 公告日期: ${item.announcement_date_roc || 'N/A'}\n`;
+                  body += `   - 截止日期: ${item.end_date_roc || 'N/A'}\n`;
+                  body += `   - 狀態: ${item.status || 'N/A'}\n`;
+                  if (item.url) {
+                    body += `   - 🔗 [查看詳情](${item.url})\n`;
+                  }
+                  body += `\n`;
+                });
+                
+                if (draftData.length > 5) {
+                  body += `...還有 ${draftData.length - 5} 筆更多草案\n\n`;
+                }
+              }
+            } catch (e) {
+              body += `詳細資料載入失敗\n\n`;
+            }
+          }
+          
+          body += `---\n`;
+          body += `*此報告由自動化系統產生*\n`;
+          body += `*錯誤防護機制已啟用，確保資料準確性*`;
+          
+          // 建立 Issue
+          await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `📊 稅務法規更新 - ${now.split(' ')[0]}`,
+            body: body,
+            labels: ['auto-update', 'tax-law']
+          });
+          
+          console.log('✅ 通知已建立');
+    
+    # Step 7: 上傳資料檔案
+    - name: Upload artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: scraping-results-${{ github.run_number }}
+        path: |
+          data/*.json
+          data/*.csv
+        retention-days: 30
+    
+    # Step 8: 提交歷史記錄到 repository
+    - name: Commit history files
+      if: always()
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # 只提交歷史檔案，避免重複提交大量資料
+        git add data/*history.json data/*report.json 2>/dev/null || true
+        
+        if git diff --staged --quiet; then
+          echo "沒有變更需要提交"
+        else
+          git commit -m "Update scraping history - $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+          echo "✅ 歷史記錄已更新"
+        fi
+    
+    # Step 9: 執行摘要
+    - name: Show execution summary
+      if: always()
+      run: |
+        echo "========================================"
+        echo "📊 執行摘要"
+        echo "========================================"
+        echo "稅務函釋："
+        echo "  - 執行狀態: ${{ steps.tax_scraper.outcome }}"
+        echo "  - 新增數量: ${{ steps.tax_scraper.outputs.new_tax_count }}"
+        echo ""
+        echo "法規草案："
+        echo "  - 執行狀態: ${{ steps.draft_scraper.outcome }}"
+        echo "  - 新增數量: ${{ steps.draft_scraper.outputs.new_draft_count }}"
+        echo ""
+        echo "整體狀態: ${{ job.status }}"
+        echo "========================================"

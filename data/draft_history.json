@@ -76,5 +76,18 @@
     "source": "MOF_Taiwan_Draft",
     "scrape_time": "2025-08-21T23:34:23.585019+08:00",
     "id": "0e195af9c361"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-09-12T18:08:49.390263+08:00",
+    "announcement_date_roc": "6.",
+    "announcement_date": null,
+    "title": "114.09.11",
+    "url": "https://www.google.com/search?q=114.09.11%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「國有非公用不動產出租管理辦法」部分條文修正草案（預告終止日114.11.10）",
+    "end_date": "2025-11-10",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "2a5e4aff59dc"
   }
 ]

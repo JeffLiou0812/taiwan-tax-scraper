@@ -89,5 +89,31 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "2a5e4aff59dc"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-09-18T18:09:05.002006+08:00",
+    "announcement_date_roc": "7.",
+    "announcement_date": null,
+    "title": "114.09.17",
+    "url": "https://www.google.com/search?q=114.09.17%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「民間自行規劃申請參與公共建設作業辦法」修正草案（預告終止日114.11.17）",
+    "end_date": "2025-11-17",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "df8c371cf33b"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-09-18T18:09:05.002185+08:00",
+    "announcement_date_roc": "8.",
+    "announcement_date": null,
+    "title": "114.09.17",
+    "url": "https://www.google.com/search?q=114.09.17%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「促進民間參與公共建設法之重大公共建設範圍」修正草案（預告終止日114.11.17）",
+    "end_date": "2025-11-17",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "df8c371cf33b"
   }
 ]

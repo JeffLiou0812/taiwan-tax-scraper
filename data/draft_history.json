@@ -115,5 +115,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "df8c371cf33b"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-09-19T18:10:45.466805+08:00",
+    "announcement_date_roc": "4.",
+    "announcement_date": null,
+    "title": "114.09.18",
+    "url": "https://www.google.com/search?q=114.09.18%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告修正「海關進口稅則」部分稅則草案（預告終止日114.10.02）",
+    "end_date": "2025-10-02",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "44baf2d9c5d5"
   }
 ]

@@ -1,9 +1,9 @@
 {
-  "execution_time": "2025-09-18T18:09:03.031662+08:00",
-  "execution_date": "2025-09-18",
+  "execution_time": "2025-09-19T18:10:43.555640+08:00",
+  "execution_date": "2025-09-19",
   "total_checked": 45,
-  "new_count": 0,
-  "has_new": false,
+  "new_count": 1,
+  "has_new": true,
   "source": "law.dot.gov.tw",
   "scraper_version": "7.0_Complete_Fixed",
   "error_statistics": {

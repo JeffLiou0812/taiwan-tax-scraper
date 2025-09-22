@@ -1,10 +1,11 @@
 {
-  "execution_time": "2025-09-21T18:08:08.381153+08:00",
+  "execution_time": "2025-09-22T18:10:34.155954+08:00",
   "total_drafts": 9,
   "new_drafts": 0,
   "has_new": false,
   "status_summary": {
-    "進行中": 9
+    "進行中": 8,
+    "已結束": 1
   },
   "url_statistics": {
     "with_original_url": 0,

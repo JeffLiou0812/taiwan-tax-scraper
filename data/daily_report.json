@@ -1,7 +1,7 @@
 {
-  "execution_time": "2025-09-23T18:09:43.594280+08:00",
-  "execution_date": "2025-09-23",
-  "total_checked": 45,
+  "execution_time": "2025-09-24T18:11:27.163833+08:00",
+  "execution_date": "2025-09-24",
+  "total_checked": 0,
   "new_count": 0,
   "has_new": false,
   "source": "law.dot.gov.tw",
@@ -10,7 +10,7 @@
     "url_errors_fixed": 0,
     "parse_errors_recovered": 0,
     "retry_attempts": 0,
-    "total_errors": 0
+    "total_errors": 3
   },
-  "status": "success"
+  "status": "no_data"
 }

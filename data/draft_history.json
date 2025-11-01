@@ -167,5 +167,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "90592f14c876"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-11-01T18:08:07.700754+08:00",
+    "announcement_date_roc": "6.",
+    "announcement_date": null,
+    "title": "114.10.30",
+    "url": "https://www.google.com/search?q=114.10.30%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「外國特定專業人才減免所得稅辦法」修正草案（預告終止日114.12.30）",
+    "end_date": "2025-12-30",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "5b002dc42fc5"
   }
 ]

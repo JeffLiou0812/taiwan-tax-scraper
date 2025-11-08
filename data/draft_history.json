@@ -180,5 +180,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "5b002dc42fc5"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-11-08T18:08:08.095632+08:00",
+    "announcement_date_roc": "7.",
+    "announcement_date": null,
+    "title": "114.11.07",
+    "url": "https://www.google.com/search?q=114.11.07%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「進口貨物估價預先審核實施辦法」第7條、第11條修正草案（預告終止日115.01.06）",
+    "end_date": "2026-01-06",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "05a678d89f3a"
   }
 ]

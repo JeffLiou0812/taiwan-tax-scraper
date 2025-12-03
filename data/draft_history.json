@@ -193,5 +193,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "05a678d89f3a"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-12-03T18:11:26.799522+08:00",
+    "announcement_date_roc": "2.",
+    "announcement_date": null,
+    "title": "114.12.02",
+    "url": "https://www.google.com/search?q=114.12.02%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「公告新增個人有依產業創新條例第二十三條之一第三項規定計算屬源自證券交易所得免納所得稅之營利所得，應計入個人之基本所得額」草案（預告終止日114.12.16）",
+    "end_date": "2025-12-16",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "f91ef4f41650"
   }
 ]

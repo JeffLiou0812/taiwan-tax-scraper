@@ -206,5 +206,44 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "f91ef4f41650"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-12-18T18:11:01.219675+08:00",
+    "announcement_date_roc": "3.",
+    "announcement_date": null,
+    "title": "114.12.17",
+    "url": "https://www.google.com/search?q=114.12.17%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「空運快遞貨物通關辦法」第12條、第17條、第29條修正草案（預告終止日115.02.02）",
+    "end_date": "2026-02-02",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "4935c170b049"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-12-18T18:11:01.219854+08:00",
+    "announcement_date_roc": "4.",
+    "announcement_date": null,
+    "title": "114.12.17",
+    "url": "https://www.google.com/search?q=114.12.17%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「海運快遞貨物通關辦法」第12條、第18條、第32條修正草案（預告終止日115.02.02）",
+    "end_date": "2026-02-02",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "4935c170b049"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2025-12-18T18:11:01.220053+08:00",
+    "announcement_date_roc": "5.",
+    "announcement_date": null,
+    "title": "114.12.17",
+    "url": "https://www.google.com/search?q=114.12.17%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「報關業設置管理辦法」部分條文修正草案（預告終止日115.02.02）",
+    "end_date": "2026-02-02",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "4935c170b049"
   }
 ]

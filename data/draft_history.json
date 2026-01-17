@@ -271,5 +271,70 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "d10400b616b6"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-01-17T18:09:07.693175+08:00",
+    "announcement_date_roc": "1.",
+    "announcement_date": null,
+    "title": "115.01.16",
+    "url": "https://www.google.com/search?q=115.01.16%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「菸酒管理法第六條第一項第四款輸入匿報、短報菸酒為私菸、私酒之一定數量」修正草案（預告終止日115.01.23）",
+    "end_date": "2026-01-23",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "0c3a9ba2ba62"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-01-17T18:09:07.693983+08:00",
+    "announcement_date_roc": "2.",
+    "announcement_date": null,
+    "title": "115.01.16",
+    "url": "https://www.google.com/search?q=115.01.16%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「菸酒管理法第四十六條第三項輸入私菸及私酒之一定數量」修正草案（預告終止日115.01.23）",
+    "end_date": "2026-01-23",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "0c3a9ba2ba62"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-01-17T18:09:07.694199+08:00",
+    "announcement_date_roc": "3.",
+    "announcement_date": null,
+    "title": "115.01.16",
+    "url": "https://www.google.com/search?q=115.01.16%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「菸酒管理法第六條第一項第五款中華民國漁船載運菸酒為私菸、私酒之一定數量」修正草案（預告終止日115.01.23）",
+    "end_date": "2026-01-23",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "0c3a9ba2ba62"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-01-17T18:09:07.694394+08:00",
+    "announcement_date_roc": "4.",
+    "announcement_date": null,
+    "title": "115.01.16",
+    "url": "https://www.google.com/search?q=115.01.16%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「離島免稅購物商店設置管理辦法」第19條、第33條修正草案（預告終止日115.01.23）",
+    "end_date": "2026-01-23",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "0c3a9ba2ba62"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-01-17T18:09:07.694570+08:00",
+    "announcement_date_roc": "5.",
+    "announcement_date": null,
+    "title": "115.01.16",
+    "url": "https://www.google.com/search?q=115.01.16%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「入境旅客攜帶行李物品報驗稅放辦法」第11條、第16條、第18條及第4條附表修正草案（預告終止日115.01.23）",
+    "end_date": "2026-01-23",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "0c3a9ba2ba62"
   }
 ]

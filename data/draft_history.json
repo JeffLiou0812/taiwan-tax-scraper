@@ -336,5 +336,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "0c3a9ba2ba62"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-01-22T18:15:04.091402+08:00",
+    "announcement_date_roc": "9.",
+    "announcement_date": null,
+    "title": "115.01.22",
+    "url": "https://www.google.com/search?q=115.01.22%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告修正「遺產及贈與稅法」部分條文草案。（預告終止日115.02.23）",
+    "end_date": "2026-02-23",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "035c1aa66733"
   }
 ]

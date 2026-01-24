@@ -349,5 +349,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "035c1aa66733"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-01-24T18:09:37.033698+08:00",
+    "announcement_date_roc": "7.",
+    "announcement_date": null,
+    "title": "115.01.21",
+    "url": "https://www.google.com/search?q=115.01.21%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「一百十四年度個人捐贈公共設施保留地或經政府闢為公眾通行道路之土地列報列舉扣除金額之計算基準」草案（預告終止日115.03.23）",
+    "end_date": "2026-03-23",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "a77ec28a23c0"
   }
 ]

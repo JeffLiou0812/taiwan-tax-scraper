@@ -1,6 +1,6 @@
 {
-  "execution_time": "2026-01-27T18:14:43.745847+08:00",
-  "execution_date": "2026-01-27",
+  "execution_time": "2026-01-28T18:16:08.534797+08:00",
+  "execution_date": "2026-01-28",
   "total_checked": 0,
   "new_count": 0,
   "has_new": false,
@@ -9,8 +9,8 @@
   "error_statistics": {
     "url_errors_fixed": 0,
     "parse_errors_recovered": 0,
-    "retry_attempts": 3,
-    "total_errors": 0
+    "retry_attempts": 0,
+    "total_errors": 3
   },
   "status": "no_data"
 }

@@ -362,5 +362,44 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "a77ec28a23c0"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-02-23T18:37:53.557207+08:00",
+    "announcement_date_roc": "5.",
+    "announcement_date": null,
+    "title": "115.02.13",
+    "url": "https://www.google.com/search?q=115.02.13%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「海關管理保稅工廠辦法」部分條文修正草案（預告終止日115.04.14）",
+    "end_date": "2026-04-14",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "a4585b3f8c44"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-02-23T18:37:53.557388+08:00",
+    "announcement_date_roc": "6.",
+    "announcement_date": null,
+    "title": "115.02.13",
+    "url": "https://www.google.com/search?q=115.02.13%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「所得基本稅額條例第十二條高風險新創事業公司認定辦法」修正草案（預告終止日115.04.14）",
+    "end_date": "2026-04-14",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "a4585b3f8c44"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-02-23T18:37:53.557562+08:00",
+    "announcement_date_roc": "7.",
+    "announcement_date": null,
+    "title": "115.02.13",
+    "url": "https://www.google.com/search?q=115.02.13%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「促進民間參與公共建設法之重大公共建設範圍」修正草案（預告終止日115.04.14）",
+    "end_date": "2026-04-14",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "a4585b3f8c44"
   }
 ]

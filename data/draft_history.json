@@ -401,5 +401,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "a4585b3f8c44"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-02-25T18:38:13.559773+08:00",
+    "announcement_date_roc": "6.",
+    "announcement_date": null,
+    "title": "115.02.24",
+    "url": "https://www.google.com/search?q=115.02.24%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「納稅者權利保護法施行細則」第4條、第8條、第11條修正草案（預告終止日115.04.27）",
+    "end_date": "2026-04-27",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "ab321ef9d7fc"
   }
 ]

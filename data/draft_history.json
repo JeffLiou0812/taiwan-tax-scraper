@@ -414,5 +414,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "ab321ef9d7fc"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-03-02T18:33:01.957846+08:00",
+    "announcement_date_roc": "7.",
+    "announcement_date": null,
+    "title": "115.02.26",
+    "url": "https://www.google.com/search?q=115.02.26%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「房屋稅條例第五條與第十五條第一項第九款規定住家用房屋戶數認定及申報擇定辦法」第5條、第7條修正草案（預告終止日115.04.27）",
+    "end_date": "2026-04-27",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "96039e6dc37a"
   }
 ]

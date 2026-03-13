@@ -427,5 +427,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "96039e6dc37a"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-03-13T18:22:49.077103+08:00",
+    "announcement_date_roc": "1.",
+    "announcement_date": null,
+    "title": "115.03.12",
+    "url": "https://www.google.com/search?q=115.03.12%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「促進民間參與公共建設法之重大公共建設範圍」修正草案（預告終止日115.03.19）",
+    "end_date": "2026-03-19",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "206a9ad312a1"
   }
 ]

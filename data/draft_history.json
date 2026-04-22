@@ -440,5 +440,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "206a9ad312a1"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-04-22T18:55:29.134957+08:00",
+    "announcement_date_roc": "3.",
+    "announcement_date": null,
+    "title": "115.04.21",
+    "url": "https://www.google.com/search?q=115.04.21%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「保稅倉庫設立及管理辦法」部分條文及第7條附表修正草案（預告終止日115.06.22）",
+    "end_date": "2026-06-22",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "fb1fc89a7f3c"
   }
 ]

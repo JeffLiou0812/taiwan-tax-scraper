@@ -1,10 +1,11 @@
 {
-  "execution_time": "2026-04-26T18:33:34.641650+08:00",
+  "execution_time": "2026-04-27T19:28:15.115764+08:00",
   "total_drafts": 3,
   "new_drafts": 0,
   "has_new": false,
   "status_summary": {
-    "進行中": 3
+    "已結束": 2,
+    "進行中": 1
   },
   "url_statistics": {
     "with_original_url": 0,

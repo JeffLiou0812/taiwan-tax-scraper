@@ -466,5 +466,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "c8902ff4bf8c"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-05-15T19:45:11.275445+08:00",
+    "announcement_date_roc": "3.",
+    "announcement_date": null,
+    "title": "115.05.14",
+    "url": "https://www.google.com/search?q=115.05.14%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「財政部所管特定非公務機關資通安全管理作業辦法」第1條、第2條、第10條修正草案（預告終止日115.07.13）",
+    "end_date": "2026-07-13",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "eaf3fd36dff5"
   }
 ]

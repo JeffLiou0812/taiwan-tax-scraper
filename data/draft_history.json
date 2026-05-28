@@ -479,5 +479,31 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "eaf3fd36dff5"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-05-28T20:57:38.511860+08:00",
+    "announcement_date_roc": "4.",
+    "announcement_date": null,
+    "title": "115.05.25",
+    "url": "https://www.google.com/search?q=115.05.25%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「納稅義務人申請延期或分期繳納稅捐辦法」第4條、第5條之1修正草案（預告終止日115.07.24）",
+    "end_date": "2026-07-24",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "dfab1bd56069"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-05-28T20:57:38.512008+08:00",
+    "announcement_date_roc": "5.",
+    "announcement_date": null,
+    "title": "115.05.25",
+    "url": "https://www.google.com/search?q=115.05.25%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「納稅義務人申請加計利息分期繳納稅捐辦法」第9條、第10條修正草案（預告終止日115.07.24）",
+    "end_date": "2026-07-24",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "dfab1bd56069"
   }
 ]

@@ -518,5 +518,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "2bf8d5ba015c"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-06-23T20:26:23.178333+08:00",
+    "announcement_date_roc": "6.",
+    "announcement_date": null,
+    "title": "115.06.22",
+    "url": "https://www.google.com/search?q=115.06.22%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「海關管理保稅運貨工具辦法」修正草案（預告終止日115.08.21）",
+    "end_date": "2026-08-21",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "6342e5d01444"
   }
 ]

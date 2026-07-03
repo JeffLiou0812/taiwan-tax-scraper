@@ -531,5 +531,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "6342e5d01444"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-07-03T19:57:25.636240+08:00",
+    "announcement_date_roc": "7.",
+    "announcement_date": null,
+    "title": "115.07.02",
+    "url": "https://www.google.com/search?q=115.07.02%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「免稅商店設置管理辦法」部分條文修正草案（預告終止日115.08.31）",
+    "end_date": "2026-08-31",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "26737ea2e3fb"
   }
 ]

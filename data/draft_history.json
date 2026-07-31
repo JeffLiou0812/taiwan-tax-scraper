@@ -544,5 +544,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "26737ea2e3fb"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-07-31T19:50:05.860044+08:00",
+    "announcement_date_roc": "4.",
+    "announcement_date": null,
+    "title": "115.07.30",
+    "url": "https://www.google.com/search?q=115.07.30%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告「軍用物品進口免稅辦法」第3條、第8條修正草案（預告終止日115.09.29）",
+    "end_date": "2026-09-29",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "89fe961035ae"
   }
 ]

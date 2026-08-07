@@ -557,5 +557,18 @@
     "status": "進行中",
     "url_type": "generated",
     "id": "89fe961035ae"
+  },
+  {
+    "source": "MOF_Taiwan_Draft",
+    "scrape_time": "2026-08-07T18:38:59.459549+08:00",
+    "announcement_date_roc": "2.",
+    "announcement_date": null,
+    "title": "115.08.06",
+    "url": "https://www.google.com/search?q=115.08.06%20site%3Alaw-out.mof.gov.tw%20OR%20site%3Ajoin.gov.tw%20OR%20site%3Amof.gov.tw",
+    "end_date_roc": "財政部公告：預告修正「證券交易稅條例」第2條之1草案（預告終止日115.08.13）",
+    "end_date": "2026-08-13",
+    "status": "進行中",
+    "url_type": "generated",
+    "id": "c095b526417d"
   }
 ]
